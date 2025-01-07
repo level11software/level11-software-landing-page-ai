@@ -1,0 +1,24 @@
+---
+import BrandLogo from "./BrandLogo.astro";
+import Container from "./Container.astro";
+---
+
+<header>
+    <nav class="absolute z-50 w-full lg:bg-transparent dark:lg:bg-transparent">
+        <Container>
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <BrandLogo />
+                </div>
+
+                <!-- Contact Button -->
+                <div>
+                    <a href="mailto:level11software@gmail.com" class="px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </Container>
+    </nav>
+</header>
